@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid green;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            /* flex-wrap: wrap; */
+            
+        }
+        .box{
+            border: 1px solid brown;
+            background-color: aquamarine;
+            width: 100px;
+            /* flex-grow: 1 ;increases the width of the boxes */
+            flex-shrink: 4;
+
+        }
+        #id2{
+            flex-shrink: 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="id1">box-1</div>
+        <div class="box" id="id2">box-2</div>
+        <div class="box" id="id3">box-3</div>
+        <div class="box" id="id4">box-4</div>
+    </div>
+</body>
+</html>
